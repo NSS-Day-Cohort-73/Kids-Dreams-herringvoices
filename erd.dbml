@@ -1,0 +1,13 @@
+Table Kids {
+    id int [pk, increment]
+    name varchar
+    celebrityId int [ref: > Celebrities.id]
+    wish varchar
+}
+
+Table Celebrities {
+    id int [pk, increment] 
+    name varchar
+    email varchar
+    sport varchar
+}
